@@ -1,7 +1,7 @@
 from flask import Flask
 import os
 
-CAMERA_FOLDER_PATH = "/home/pi/camera"
+CAMERA_FOLDER_PATH = "home/pi/camera_folder"
 LOG_FILE_NAME = CAMERA_FOLDER_PATH + "/photo_logs.txt"
 photo_counter = 0
 
