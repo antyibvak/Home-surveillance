@@ -24,8 +24,8 @@ def check_movement():
         global photo_counter
         difference = line_counter - photo_counter
         message = str(difference) + " photos were taken since you last checked. <br/><br/>"
-        message += "Last photo: " + last_photo_file_name + "<br/>"
-        message += "<img src=\"" + last_photo_file_name + "\">"
+        message = message + "Last photo: " + last_photo_file_name + "<br/>"
+        message = message + "<img src=\"" + last_photo_file_name + "\">"
         photo_counter = line_counter
     else:
         message = "Nothing new"
